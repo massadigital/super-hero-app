@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  superhero.webapi:
+    image: ${DOCKER_REGISTRY-}superherowebapi
+    build:
+      context: .
+      dockerfile: SuperHero.WebApi/Dockerfile
